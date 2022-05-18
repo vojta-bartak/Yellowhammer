@@ -1,0 +1,39 @@
+library(tidyverse)
+
+df <- read.table("data_syllabel.txt", header=T, sep="\t")
+df <- left_join(df, read.table("data_final.txt", sep="\t", header=T) %>%
+                  dplyr::select(c("code","day","singing_sunrise")), by=c("code","day"))
+df <- left_join(df, read.table("data_all.txt", sep="\t", header=T) %>%
+                  mutate(code=kod) %>%
+                  dplyr::select(c("code","day","RPDI_do","RPDI_wd")), by=c("code","day"))
+df$code <- as.factor(df$code)
+df$day <- factor(df$day, levels = c(0,1), labels = c("Sunday", "Monday"))
+df$loc <- factor(df$loc, levels = c(0,1), labels = c("AL", "HW"))
+df$dist_road_resc <- scale(df$distance_road)
+df$RPDI2 <- df$RPDI_do
+df$RPDI2[df$day == "Monday"] <- df$RPDI_wd[df$day == "Monday"]
+df$RPDI2sc <- scale(df$RPDI2)
+
+write.table(df, file = "data_yellowhammer.csv", row.names = F, sep=";")
+
+save(df.all, file = "data_all.RData")
+
+ncol(read.table("data_syllabel.txt", header=T, sep="\t"))
+ncol(read.table("data_final.txt", header=T, sep="\t"))
+ncol(read.table("data_all.txt", header=T, sep="\t"))
+
+nrow(read.table("data_syllabel.txt", header=T, sep="\t"))
+nrow(read.table("data_final.txt", header=T, sep="\t"))
+nrow(read.table("data_all.txt", header=T, sep="\t"))
+
+names(read.table("data_syllabel.txt", header=T, sep="\t"))
+names(read.table("data_final.txt", header=T, sep="\t"))
+names(read.table("data_all.txt", header=T, sep="\t"))
+
+# Highway localities only
+df.dopr <- df[df$loc == "HW",]
+
+# vehicle count per day (Workdays/Weekend)
+df.dopr$RPDI2 <- df.dopr$RPDI_do
+df.dopr$RPDI2[df.dopr$day == "Monday"] <- df.dopr$RPDI_wd[df.dopr$day == "Monday"]
+df.dopr$RPDI2sc <- scale(df.dopr$RPDI2)

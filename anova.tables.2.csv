@@ -1,0 +1,10 @@
+"rowname","Chisq.x","Df.x","Pr(>Chisq).x","Chisq.y","Df.y","Pr(>Chisq).y","Chisq.x.x","Df.x.x","Pr(>Chisq).x.x","Chisq.y.y","Df.y.y","Pr(>Chisq).y.y"
+"dist_road_resc",8.5064,1,0.0035,0.4299,1,0.512,11.3006,1,8e-04,0.1798,1,0.6716
+"wind",5.5105,1,0.0189,0.939,1,0.3325,5.8878,1,0.0152,29.4434,1,0
+"pressure",3.4094,1,0.0648,1.8709,1,0.1714,3.0804,1,0.0792,12.432,1,4e-04
+"day",NA,NA,NA,1.3106,1,0.2523,NA,NA,NA,9.4247,1,0.0021
+"temp",NA,NA,NA,3.1144,1,0.0776,NA,NA,NA,0.3691,1,0.5435
+"cloudiness",NA,NA,NA,0.332,1,0.5645,NA,NA,NA,0.0856,1,0.7698
+"day:wind",NA,NA,NA,NA,NA,NA,NA,NA,NA,11.0236,1,9e-04
+"day:pressure",NA,NA,NA,NA,NA,NA,NA,NA,NA,17.3712,1,0
+"day:cloudiness",NA,NA,NA,NA,NA,NA,NA,NA,NA,39.4103,1,0

@@ -1,0 +1,27 @@
+{
+    "id": "0DC61575",
+    "path": "G:/ownCloud/Yellowhammer/Distance_to_roads.R",
+    "project_path": "Distance_to_roads.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1652881405777.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "113,57",
+        "scrollLine": "78"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1652883443,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1652883443056,
+    "read_only": false,
+    "read_only_alternatives": []
+}

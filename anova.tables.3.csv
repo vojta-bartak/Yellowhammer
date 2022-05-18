@@ -1,0 +1,7 @@
+"rowname","Chisq.x","Df.x","Pr(>Chisq).x","Chisq.y","Df.y","Pr(>Chisq).y","Chisq.x.x","Df.x.x","Pr(>Chisq).x.x","Chisq.y.y","Df.y.y","Pr(>Chisq).y.y"
+"RPDI2sc",3.9452,1,0.047,NA,NA,NA,7.6714,1,0.0056,NA,NA,NA
+"temp",5.1351,1,0.0234,3.7738,1,0.0521,5.0029,1,0.0253,NA,NA,NA
+"wind",2.6034,1,0.1066,4.603,1,0.0319,NA,NA,NA,10.1986,1,0.0014
+"vehicle",NA,NA,NA,4.6686,1,0.0307,NA,NA,NA,5.6072,1,0.0179
+"pressure",NA,NA,NA,3.0182,1,0.0823,NA,NA,NA,14.2912,1,2e-04
+"cloudiness",NA,NA,NA,7.3438,1,0.0067,NA,NA,NA,12.6281,1,4e-04
