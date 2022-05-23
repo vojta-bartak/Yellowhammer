@@ -138,12 +138,12 @@ nd3.4 <- nd3.4 %>%
 plot_grid(ggplot(nd3.1, aes(x=RPDI2sc*sd(df[df$loc=="HW",]$RPDI2)+mean(df[df$loc=="HW",]$RPDI2), y=y)) +
             geom_line(color="coral4") +
             geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="coral4") +
-            labs(x="", y="Song duration (sec)") +
+            labs(x="", y="Song duration (s)") +
             theme_bw(),
           ggplot(nd3.2, aes(x=vehicle, y=y)) +
             geom_line(color="coral4") +
             geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="coral4") +
-            labs(x="", y="Syllabus length (sec)") +
+            labs(x="", y="Syllabus length (s)") +
             theme_bw(),
           ggplot(nd3.3, aes(x=RPDI2sc*sd(df[df$loc=="HW",]$RPDI2)+mean(df[df$loc=="HW",]$RPDI2), y=y)) +
             geom_line(color="coral4") +

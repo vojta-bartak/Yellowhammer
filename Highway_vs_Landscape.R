@@ -58,7 +58,7 @@ ggplot(nd1.1, aes(x=pressure, y=y)) +
   scale_color_manual(values = c("chartreuse4", "coral4")) +
   scale_fill_manual(values = c("chartreuse4", "coral4")) +
   facet_grid(.~wind) +
-  labs(x="Air pressure (hPa)", y="Song duration (sec)", color="", fill="") +
+  labs(x="Air pressure (hPa)", y="Song duration (s)", color="", fill="") +
   theme_bw() +
   theme(legend.position = "top")
 ggsave("effects_m1.1.png", dpi=300, height = 14, width = 18, units = "cm")
@@ -135,7 +135,7 @@ ggplot(nd1.2, aes(x=x, y=y)) +
   scale_color_manual(values = c("chartreuse4", "coral4")) +
   scale_fill_manual(values = c("chartreuse4", "coral4")) +
   facet_wrap(~var, scales = "free_x") +
-  labs(x="", y="Syllabus length (sec)", color="", fill="") +
+  labs(x="", y="Syllabus length (s)", color="", fill="") +
   theme_bw() +
   theme(legend.position = "top")
 ggsave("effects_m1.2.png", dpi=300, height = 14, width = 18, units = "cm")
@@ -164,7 +164,7 @@ ggplot(nd1.2.2, aes(x=day, y=y, color=loc)) +
   geom_errorbar(aes(ymin=lwr, ymax=upr, fill=loc), position = position_dodge(), width = .2) +
   scale_color_manual(values = c("chartreuse4", "coral4")) +
   scale_fill_manual(values = c("chartreuse4", "coral4")) +
-  labs(x="", y="Syllabus length (sec)", color="", fill="") +
+  labs(x="", y="Syllabus length (s)", color="", fill="") +
   theme_bw() +
   theme(legend.position = "top")
 ggsave("effects_m1.2_day.png", dpi=300, height = 10, width = 10, units = "cm")

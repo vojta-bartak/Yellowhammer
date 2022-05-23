@@ -47,7 +47,7 @@ nd2.1.1 <- nd2.1.1 %>%
 (p2.1.1 <- ggplot(nd2.1.1, aes(x=dist_road, y=y)) +
     geom_line(color="chartreuse4") +
     geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="chartreuse4") +
-    labs(x="Distance to nearest road (m)", y="Song duration (sec)") +
+    labs(x="Distance to nearest road (m)", y="Song duration (s)") +
     theme_bw())
 
 # Syllabus length -----------------------------------------------------------------------------
