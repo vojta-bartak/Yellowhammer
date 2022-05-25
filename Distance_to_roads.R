@@ -50,7 +50,7 @@ nd2.1.1 <- nd2.1.1 %>%
     labs(x="Distance to nearest road (m)", y="Song duration (s)") +
     theme_bw())
 
-# Syllabus length -----------------------------------------------------------------------------
+# syllable length -----------------------------------------------------------------------------
 
 # model selection
 m2.2 <- lmer(length_mean~day*(dist_road_resc+temp+wind+pressure+cloudiness)+(1|code),

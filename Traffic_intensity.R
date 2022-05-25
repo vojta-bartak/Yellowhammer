@@ -3,6 +3,7 @@ library(car)
 library(lme4)
 library(MuMIn)
 library(lattice)
+library(cowplot)
 
 df <- read.table("data_yellowhammer.csv", sep=";", header=T)
 
@@ -36,7 +37,7 @@ qqmath(m3.1)
 r.squaredGLMM(m3.1)
 
 
-# Syllabus length -----------------------------------------------------------------------------
+# syllable length -----------------------------------------------------------------------------
 
 # model selection
 m3.2 <- lmer(length_mean ~ vehicle+RPDI2sc+temp+wind+pressure+cloudiness+(1|code),
@@ -143,7 +144,7 @@ plot_grid(ggplot(nd3.1, aes(x=RPDI2sc*sd(df[df$loc=="HW",]$RPDI2)+mean(df[df$loc
           ggplot(nd3.2, aes(x=vehicle, y=y)) +
             geom_line(color="coral4") +
             geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="coral4") +
-            labs(x="", y="Syllabus length (s)") +
+            labs(x="", y="Syllable length (s)") +
             theme_bw(),
           ggplot(nd3.3, aes(x=RPDI2sc*sd(df[df$loc=="HW",]$RPDI2)+mean(df[df$loc=="HW",]$RPDI2), y=y)) +
             geom_line(color="coral4") +
