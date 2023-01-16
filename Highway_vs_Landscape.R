@@ -111,7 +111,11 @@ ggplot(nd1.S2, aes(x=pressure, y=y)) +
 ggsave("Figures_Yellowhammer_revision/effects1.2_S2.png", dpi=300, height = 12, width = 14, units = "cm")
 
 
+<<<<<<< HEAD
 # Strophe length -----------------------------------------------------------------------------
+=======
+# syllable length -----------------------------------------------------------------------------
+>>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
 
 # model selection
 lmerTest::ranova(lmerTest::lmer(length_mean ~ day*loc*(temp_sc+wind_sc+pressure_sc+cloudiness_sc)+(1|code)+(1|locality), data=df))
@@ -145,10 +149,47 @@ nd1.2 <- nd1.2 %>%
   geom_ribbon(aes(ymin=lwr, ymax=upr, fill=loc), alpha=.3) +
   scale_color_manual(values = c("chartreuse4", "coral4")) +
   scale_fill_manual(values = c("chartreuse4", "coral4")) +
+<<<<<<< HEAD
   labs(x="Temperature (°C)", y="Strophe length (s)", color="", fill="") +
   theme_bw() +
   theme(legend.position = "top"))
 ggsave("Figures_Yellowhammer_revision/effects1.2.png", dpi=300, height = 12, width = 14, units = "cm")
+=======
+  facet_wrap(~var, scales = "free_x") +
+  labs(x="", y="Syllable length (s)", color="", fill="") +
+  theme_bw() +
+  theme(legend.position = "top")
+ggsave("effects_m1.2.png", dpi=300, height = 14, width = 18, units = "cm")
+
+nd1.2.2 <- expand.grid(day=factor(c("Monday", "Sunday"), levels=c("Sunday", "Monday")), 
+                       loc=c("AL", "HW")) %>%
+  mutate(
+    cloudiness = mean(df$cloudiness),
+    wind = mean(df$wind),
+    temp = mean(df$temp),
+    pressure = mean(df$pressure)
+  )
+bm1.2.2 <- bootMer(m1.2, 
+                   function(m){predict(m, newdata = nd1.2.2, re.form = NA)}, 
+                   nsim = 500, 
+                   .progress = "txt")
+nd1.2.2 <- nd1.2.2 %>%
+  mutate(
+    y = bm1.2.2$t0,
+    lwr = apply(bm1.2.2$t, 2, quantile, 0.025),
+    upr = apply(bm1.2.2$t, 2, quantile, 0.975),
+    loc = factor(loc, levels = c("AL", "HW"), labels = c("Agricultural landscape", "Highway"))
+  )
+ggplot(nd1.2.2, aes(x=day, y=y, color=loc)) +
+  geom_point(position = position_dodge(width = .2)) +
+  geom_errorbar(aes(ymin=lwr, ymax=upr, fill=loc), position = position_dodge(), width = .2) +
+  scale_color_manual(values = c("chartreuse4", "coral4")) +
+  scale_fill_manual(values = c("chartreuse4", "coral4")) +
+  labs(x="", y="Syllable length (s)", color="", fill="") +
+  theme_bw() +
+  theme(legend.position = "top")
+ggsave("effects_m1.2_day.png", dpi=300, height = 10, width = 10, units = "cm")
+>>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
 
 
 # Onset of singing ----------------------------------------------------------------------------

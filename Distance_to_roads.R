@@ -49,7 +49,57 @@ nd2.1 <- nd2.1 %>%
          lwr = apply(bm2.1$t, 2, quantile, 0.025),
          upr = apply(bm2.1$t, 2, quantile, 0.975),
          dist_road = dist_road_resc*sd(df$distance_road) + mean(df$distance_road))
+<<<<<<< HEAD
 ggplot(nd2.1, aes(x=dist_road, y=y)) +
+=======
+(p2.1.1 <- ggplot(nd2.1.1, aes(x=dist_road, y=y)) +
+    geom_line(color="chartreuse4") +
+    geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="chartreuse4") +
+    labs(x="Distance to nearest road (m)", y="Song duration (s)") +
+    theme_bw())
+
+# syllable length -----------------------------------------------------------------------------
+
+# model selection
+m2.2 <- lmer(length_mean~day*(dist_road_resc+temp+wind+pressure+cloudiness)+(1|code),
+             data=df[df$loc=="AL",])
+Anova(m2.2) # removing interactions
+m2.2 <- lmer(length_mean~day+dist_road_resc+temp+wind+pressure+cloudiness+(1|code),
+             data=df[df$loc=="AL",])
+Anova(m2.2) # final model (not significant)
+
+
+# Number of syllables -------------------------------------------------------------------------
+
+# model selection
+m2.3 <- lmer(syll_sum~day*(dist_road_resc+temp+wind+pressure+cloudiness)+(1|code),
+             data=df[df$loc=="AL",])
+Anova(m2.3) # removing interactions
+m2.3 <- lmer(syll_sum~day+dist_road_resc+temp+wind+pressure+cloudiness+(1|code),
+             data=df[df$loc=="AL",])
+Anova(m2.3) # removing temp, day, and cloudiness
+m2.3 <- lmer(syll_sum~dist_road_resc+wind+pressure+(1|code),
+             data=df[df$loc=="AL",])
+Anova(m2.3) # final model
+
+# model diagnostics and output
+plot(m2.3)
+qqmath(m2.3)
+(s2.3 <- summary(m2.3))
+r.squaredGLMM(m2.3)
+
+# effect plots
+nd2.3.1 <- data.frame(dist_road_resc = seq(min(df$dist_road_resc), max(df$dist_road_resc), l=100),
+                      wind = mean(df$wind),
+                      pressure = mean(df$pressure))
+bm2.3.1 <- bootMer(m2.3, function(m){predict(m, newdata = nd2.3.1, re.form = NA)}, nsim = 500, .progress = "txt")
+nd2.3.1 <- nd2.3.1 %>%
+  mutate(y = bm2.3.1$t0,
+         lwr = apply(bm2.3.1$t, 2, quantile, 0.025),
+         upr = apply(bm2.3.1$t, 2, quantile, 0.975),
+         dist_road = dist_road_resc*sd(df$distance_road) + mean(df$distance_road))
+(p2.3.1 <- ggplot(nd2.3.1, aes(x=dist_road, y=y)) +
+>>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
   geom_line(color="chartreuse4") +
   geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="chartreuse4") +
   labs(x="Distance to nearest road (m)", y="Song duration (s)") +

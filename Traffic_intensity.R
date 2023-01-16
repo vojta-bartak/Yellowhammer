@@ -40,7 +40,12 @@ r.squaredGLMM(m3.1)
 summary(m3.1) %>% coef %>% round(3) %>% write.table("coef3.1.csv", sep=";")
 Anova(m3.1) %>% round(4) %>% write.table("anova3.1.csv", sep=";")
 
+<<<<<<< HEAD
 # strophe length -----------------------------------------------------------------------------
+=======
+
+# syllable length -----------------------------------------------------------------------------
+>>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
 
 # model selection
 lmerTest::ranova(lmerTest::lmer(length_mean ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code)+(1|locality),
@@ -116,7 +121,11 @@ plot_grid(ggplot(nd3.1, aes(x=RPDI2sc*sd(df[df$loc=="HW",]$RPDI2)+mean(df[df$loc
           ggplot(nd3.2, aes(x=vehicle, y=y)) +
             geom_line(color="coral4") +
             geom_ribbon(aes(ymin=lwr, ymax=upr), alpha=.3, fill="coral4") +
+<<<<<<< HEAD
             labs(x="Instant traffic intensity (cars/hour)", y="Strophe length (s)") +
+=======
+            labs(x="", y="Syllable length (s)") +
+>>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
             theme_bw(),
           ggplot(nd3.3, aes(x=vehicle, y=y)) +
             geom_line(color="coral4") +
