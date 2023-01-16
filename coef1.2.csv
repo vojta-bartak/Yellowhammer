@@ -1,0 +1,5 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";1.392;0.121;11.515
+"locHW";-0.505;0.169;-2.997
+"temp_sc";0.179;0.119;1.506
+"locHW:temp_sc";-0.329;0.164;-2.014

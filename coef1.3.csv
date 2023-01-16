@@ -1,0 +1,7 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";-10.578;14.61;-0.724
+"locHW";4.79;20.808;0.23
+"wind_sc";5.44;2.539;2.142
+"pressure_sc";-0.1;2.186;-0.046
+"cloudiness_sc";5.858;2.242;2.612
+"locHW:pressure_sc";10.216;3.049;3.351

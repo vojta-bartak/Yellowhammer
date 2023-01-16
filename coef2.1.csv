@@ -1,0 +1,4 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";103.244;41.685;2.477
+"dist_road_resc";100.255;34.401;2.914
+"wind_sc";46.759;20.735;2.255

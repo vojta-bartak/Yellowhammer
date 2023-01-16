@@ -1,8 +1,0 @@
-"rowname","Estimate.x","Std. Error.x","t value.x","Estimate.y","Std. Error.y","t value.y","Estimate.x.x","Std. Error.x.x","t value.x.x","Estimate.y.y","Std. Error.y.y","t value.y.y"
-"(Intercept)",105.164,31.067,3.385,35.697,19.367,1.843,71.254,17.118,4.162,-1729.032,444.885,-3.886
-"RPDI2sc",-24.912,12.542,-1.986,NA,NA,NA,-18.17,6.56,-2.77,NA,NA,NA
-"temp",-6.731,2.97,-2.266,-0.052,0.027,-1.943,-3.838,1.716,-2.237,NA,NA,NA
-"wind",2.79,1.729,1.614,-0.043,0.02,-2.145,NA,NA,NA,2.174,0.681,3.194
-"vehicle",NA,NA,NA,-0.001,0.001,-2.161,NA,NA,NA,0.037,0.016,2.368
-"pressure",NA,NA,NA,-0.033,0.019,-1.737,NA,NA,NA,1.651,0.437,3.78
-"cloudiness",NA,NA,NA,-0.105,0.039,-2.71,NA,NA,NA,4.25,1.196,3.554

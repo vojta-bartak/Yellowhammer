@@ -1,0 +1,7 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";1.031;0.132;7.801
+"vehicle_sc";-0.212;0.098;-2.161
+"temp_sc";-0.256;0.132;-1.943
+"wind_sc";-0.279;0.13;-2.145
+"pressure_sc";-0.203;0.117;-1.737
+"cloudiness_sc";-0.334;0.123;-2.71

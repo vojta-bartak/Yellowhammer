@@ -1,0 +1,5 @@
+"Chisq";"Df";"Pr(>Chisq)"
+"vehicle_sc";5.6072;1;0.0179
+"wind_sc";10.1986;1;0.0014
+"pressure_sc";14.2912;1;2e-04
+"cloudiness_sc";12.6281;1;4e-04

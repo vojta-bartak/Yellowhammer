@@ -1,0 +1,4 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";1.402;0.115;12.234
+"temp_sc";0.237;0.121;1.952
+"pressure_sc";0.126;0.086;1.456

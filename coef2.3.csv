@@ -1,0 +1,9 @@
+"Estimate";"Std. Error";"t value"
+"(Intercept)";-11.819;16.56;-0.714
+"daySunday";0.816;1.882;0.433
+"temp_sc";-23.39;11.84;-1.976
+"wind_sc";8.381;3.32;2.525
+"pressure_sc";-7.793;2.805;-2.779
+"cloudiness_sc";7.524;5.031;1.495
+"daySunday:temp_sc";12.478;4.392;2.841
+"daySunday:wind_sc";8.945;4.339;2.062

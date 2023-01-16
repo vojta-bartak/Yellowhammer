@@ -1,0 +1,6 @@
+"Chisq";"Df";"Pr(>Chisq)"
+"loc";0.0563;1;0.8124
+"wind_sc";4.59;1;0.0322
+"pressure_sc";9.0691;1;0.0026
+"cloudiness_sc";6.825;1;0.009
+"loc:pressure_sc";11.227;1;8e-04
