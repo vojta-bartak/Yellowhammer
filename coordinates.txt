@@ -1,6 +1,5 @@
 Typ	Lokalita	Latitude	Longitude		
-highway	1D8H1	50.319263	"14.309831
-"		
+highway	1D8H1	50.319263	"14.309831"		
 highway	1D8H2	50.321615	14.306871		
 highway	1D8H3	50.323164	14.304377		
 highway	1D8H4	50.325708	14.29966		

@@ -19,15 +19,15 @@ df <- read.table("data_yellowhammer.csv", sep=";", header=T) %>%
 # Song duration -------------------------------------------------------------------------------
 
 # multicollinearity check
-lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+humidity_sc+pressure_sc+cloudiness+(1|code)+(1|locality),
+lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+humidity_sc+pressure_sc+cloudiness+(1|locality/code),
      data=df[df$loc=="HW",]) %>% 
   vif # humidity will be removed
-lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness+(1|code)+(1|locality),
+lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness+(1|locality/code),
      data=df[df$loc=="HW",]) %>% 
   vif # fine
 
 # model selection
-lmerTest::ranova(lmerTest::lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code)+(1|locality),
+lmerTest::ranova(lmerTest::lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|locality/code),
                                 data=df[df$loc=="HW",]))
 m3.1 <- lmer(length_sum ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code),
              data=df[df$loc=="HW",])
@@ -40,15 +40,11 @@ r.squaredGLMM(m3.1)
 summary(m3.1) %>% coef %>% round(3) %>% write.table("coef3.1.csv", sep=";")
 Anova(m3.1) %>% round(4) %>% write.table("anova3.1.csv", sep=";")
 
-<<<<<<< HEAD
-# strophe length -----------------------------------------------------------------------------
-=======
 
-# syllable length -----------------------------------------------------------------------------
->>>>>>> 3bf4b21e3030bee334accf16672b54939eb4cb31
+# Strophe length -----------------------------------------------------------------------------
 
 # model selection
-lmerTest::ranova(lmerTest::lmer(length_mean ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code)+(1|locality),
+lmerTest::ranova(lmerTest::lmer(length_mean ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|locality/code),
                                 data=df[df$loc=="HW",]))
 m3.2 <- lmer(length_mean ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code),
              data=df[df$loc=="HW",])
@@ -65,7 +61,7 @@ Anova(m3.2) %>% round(4) %>% write.table("anova3.2.csv", sep=";")
 # Onset of singing ----------------------------------------------------------------------------
 
 # model selection
-lmerTest::ranova(lmerTest::lmer(singing_sunrise ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code)+(1|locality),
+lmerTest::ranova(lmerTest::lmer(singing_sunrise ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|locality/code),
                                 data=df[df$loc=="HW",]))
 m3.3 <- lmer(singing_sunrise ~ vehicle_sc+RPDI2sc+temp_sc+wind_sc+pressure_sc+cloudiness_sc+(1|code),
              data=df[df$loc=="HW",])

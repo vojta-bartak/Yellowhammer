@@ -1,0 +1,61 @@
+coords	type	location
+50°19'9.346''N, 14°18'35.392''E	HW	Nová Ves – Ledčice
+50°19'17.814''N, 14°18'24.737''E	HW	Nová Ves – Ledčice
+50°19'23.390''N, 14°18'15.757''E	HW	Nová Ves – Ledčice
+50°19'32.548''N, 14°17'58.777''E	HW	Nová Ves – Ledčice
+50°19'39.353''N, 14°17'45.992''E	HW	Nová Ves – Ledčice
+50°21'56.572''N, 14°19'35.771''E	AL	Ctiněves – Kostomlaty p. Řípem
+50°21'47.505''N, 14°19'39.759''E	AL	Ctiněves – Kostomlaty p. Řípem
+50°22'15.616''N, 14°19'40.280''E	AL	Ctiněves – Kostomlaty p. Řípem
+50°22'29.940''N, 14°19'26.472''E	AL	Ctiněves – Kostomlaty p. Řípem
+50°22'11.933''N, 14°19'2.487''E	AL	Ctiněves – Kostomlaty p. Řípem
+50°11'46.705''N, 14°9'42.311''E	HW	Brandýsek – Holousy
+50°11'41.735''N, 14°10'6.895''E	HW	Brandýsek – Holousy
+50°11'36.648''N, 14°10'21.099''E	HW	Brandýsek – Holousy
+50°11'33.421''N, 14°10'301.060''E	HW	Brandýsek – Holousy
+50°11'26.374''N, 14°10'43.950''E	HW	Brandýsek – Holousy
+50°13'34.165''N, 14°14'23.198''E	AL	Slatina – Blevice – Zeměchy
+50°13'31.941''N, 14°14'38.570''E	AL	Slatina – Blevice – Zeměchy
+50°13'24.133''N, 14°14'42.201''E	AL	Slatina – Blevice – Zeměchy
+50°13'17.936''N, 14°14'24.975''E	AL	Slatina – Blevice – Zeměchy
+50°13'13.791''N, 14°14'8.434''E	AL	Slatina – Blevice – Zeměchy
+50°13'53.003''N, 14°23'52.602''E	HW	Odolena Voda – Úžice
+50°14'1.681''N, 14°23'41.614''E	HW	Odolena Voda – Úžice
+50°14'12.526''N, 14°23'23.702''E	HW	Odolena Voda – Úžice
+50°14'24.586''N, 14°23'1.450''E	HW	Odolena Voda – Úžice
+50°14'32.900''N, 14°22'48.421''E	HW	Odolena Voda – Úžice
+50°15'16.107"N, 14°26'18.438"E	AL	Kopeč – Netřeba
+50°15'12.374"N 14°25'47.544"E	AL	Kopeč – Netřeba
+50°15'9.855"N, 14°25'14.964"E	AL	Kopeč – Netřeba
+50°15'21.762"N, 14°25'7.611"E	AL	Kopeč – Netřeba
+50°15'22.682"N, 14°24'43.993"E	AL	Kopeč – Netřeba
+50°8'5.594''N, 14°15'0.366''E	HW	Středokluky – Makotřasy
+50°8'20.119''N, 14°14'26.672''E	HW	Středokluky – Makotřasy
+50°8'25.541''N, 14°14'17.083''E	HW	Středokluky – Makotřasy
+50°8'30.696"N, 14°14'3.203"E	HW	Středokluky – Makotřasy
+50°8'38.642"N, 14°13'45.474"E	HW	Středokluky – Makotřasy
+50°9'0.837''N, 14°15'29.455''E	AL	Malé Číčovice – Pazderna
+50°8'55.089''N, 14°15'48.294''E	AL	Malé Číčovice – Pazderna
+50°8'51.453''N, 14°16'5.023''E	AL	Malé Číčovice – Pazderna
+50°8'56.852"N, 14°16'9.392"E	AL	Malé Číčovice – Pazderna
+50°8'33.778"N, 14°16'9.778"E	AL	Malé Číčovice – Pazderna
+50°5'59.346''N, 14°10'18.931''E	HW	Pavlov – Jeneč
+50°5'57.605''N, 14°10'40.763''E	HW	Pavlov – Jeneč
+50°5'55.462''N, 14°10'55.035''E	HW	Pavlov – Jeneč
+50°5'48.990"N, 14°11'13.854"E	HW	Pavlov – Jeneč
+50°5'43.291"N, 14°11'34.383"E	HW	Pavlov – Jeneč
+50°4'15.339''N, 14°8'29.394''E	AL	Rymáň – Svárov
+50°4'14.548''N, 14°8'12.312''E	AL	Rymáň – Svárov
+50°4'11.168''N, 14°7'49.819''E	AL	Rymáň – Svárov
+50°3'55.568"N, 14°7'36.977"E	AL	Rymáň – Svárov
+50°3'53.956"N, 14°7'6.271"E	AL	Rymáň – Svárov
+50°6'8.062"N, 14°7'57.187"E	HW	Malé Přípotočno – Braškov
+50°7'3.166"N, 14°3'44.597"E	HW	Malé Přípotočno – Braškov
+50°6'15.413"N, 14°6'43.189"E	HW	Malé Přípotočno – Braškov
+50°6'13.909"N, 14°7'5.354"E	HW	Malé Přípotočno – Braškov
+50°6'15.395"N, 14°6'42.209"E	HW	Malé Přípotočno – Braškov
+50°6'52.724"N, 14°3'35.298"E	AL	Velká Dobrá – Doksy
+50°7'3.166"N, 14°3'44.597"E	AL	Velká Dobrá – Doksy
+50°7'10.196"N, 14°3'44.409"E	AL	Velká Dobrá – Doksy
+50°7'17.693"N, 14°3'56.991"E	AL	Velká Dobrá – Doksy
+50°7'31.394"N, 14°3'30.195"E	AL	Velká Dobrá – Doksy
